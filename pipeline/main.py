@@ -5,11 +5,12 @@ python main.py
 """
 
 from pathlib import Path
-from typing import Iterable, Generator
+from typing import Iterable, Generator, Callable
 
 from extract import extract_csv
 from transform import transform_all
 from load import MongoLoader
+
 
 
 DATA_PATH = Path(__file__).parent.parent / "data"
